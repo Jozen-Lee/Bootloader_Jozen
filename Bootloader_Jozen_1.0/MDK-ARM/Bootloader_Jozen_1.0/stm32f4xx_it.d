@@ -28,10 +28,13 @@ bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-bootloader_jozen_1.0\stm32f4xx_it.o: ..\IAP\stmflash.h
+bootloader_jozen_1.0\stm32f4xx_it.o: ..\USER\Middlewares\STM_FLASH\stmflash.h
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Core/Inc/main.h
-bootloader_jozen_1.0\stm32f4xx_it.o: ..\IAP\interaction.h
+bootloader_jozen_1.0\stm32f4xx_it.o: ..\USER\Application\interaction.h
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Core/Inc/usart.h
-bootloader_jozen_1.0\stm32f4xx_it.o: ..\IAP\iap.h
+bootloader_jozen_1.0\stm32f4xx_it.o: ..\USER\Middlewares\IAP\iap.h
 bootloader_jozen_1.0\stm32f4xx_it.o: ../Core/Inc/stm32f4xx_it.h

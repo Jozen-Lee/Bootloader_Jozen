@@ -19,6 +19,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
+#include "fatfs.h"
+#include "sdio.h"
+#include "spi.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -85,18 +89,21 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART1_UART_Init();
+  MX_SDIO_SD_Init();
+  MX_FATFS_Init();
+  MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
-
+	Interaction_Usart();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
     /* USER CODE END WHILE */
-		Interaction_Usart();
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

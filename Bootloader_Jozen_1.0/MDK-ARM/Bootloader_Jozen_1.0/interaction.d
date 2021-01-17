@@ -1,5 +1,5 @@
-bootloader_jozen_1.0\interaction.o: ..\IAP\interaction.c
-bootloader_jozen_1.0\interaction.o: ..\IAP\interaction.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Application\interaction.c
+bootloader_jozen_1.0\interaction.o: ..\USER\Application\interaction.h
 bootloader_jozen_1.0\interaction.o: ../Core/Inc/main.h
 bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 bootloader_jozen_1.0\interaction.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -29,9 +29,12 @@ bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4x
 bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 bootloader_jozen_1.0\interaction.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-bootloader_jozen_1.0\interaction.o: ..\IAP\stmflash.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\STM_FLASH\stmflash.h
 bootloader_jozen_1.0\interaction.o: ../Core/Inc/main.h
-bootloader_jozen_1.0\interaction.o: ..\IAP\interaction.h
-bootloader_jozen_1.0\interaction.o: ..\IAP\iap.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Application\interaction.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\IAP\iap.h
 bootloader_jozen_1.0\interaction.o: ../Core/Inc/usart.h

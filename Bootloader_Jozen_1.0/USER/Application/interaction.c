@@ -56,7 +56,8 @@ static uint32_t Progress_Receive(void)
 	#ifdef USART_MODE
 	uint16_t oldcount=0;						//老的串口接收数据值
 	uint32_t applenth=0;				    //接收到的app代码长度
-	char trans[] = "请使用串口发送.bin文件\r\n";	
+	char trans[] = "请使用串口发送.bin文件!\r\n";	
+	char error[] = "发送数据有误,请选择发送.bin文件\r\n";
 	HAL_UART_Transmit(&huart1,(uint8_t*)trans,sizeof(trans),MAX_WAIT_TIME);
 	while(1)
 	{
@@ -64,11 +65,19 @@ static uint32_t Progress_Receive(void)
 		{
 			if(oldcount==USART_RX_CNT)	//新周期内,没有收到任何数据,认为本次数据接收完成.
 			{
-				applenth=USART_RX_CNT;
-				oldcount=0;
-				USART_RX_CNT=0;
-				HAL_UART_Transmit(&huart1,(uint8_t*)rec,sizeof(rec),MAX_WAIT_TIME);	//传输完成提示
-				return applenth;
+				if(USART_RX_CNT > 50)	//防止误操作
+				{
+					applenth=USART_RX_CNT;
+					oldcount=0;
+					USART_RX_CNT=0;
+					HAL_UART_Transmit(&huart1,(uint8_t*)rec,sizeof(rec),MAX_WAIT_TIME);	//传输完成提示
+					return applenth;
+				}
+				else
+				{
+					USART_RX_CNT=0;
+					HAL_UART_Transmit(&huart1,(uint8_t*)error,sizeof(error),MAX_WAIT_TIME);	//错误提示
+				}
 			}
 			else 
 			{
