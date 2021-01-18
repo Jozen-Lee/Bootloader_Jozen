@@ -509,6 +509,21 @@
               <FileType>1</FileType>
               <FilePath>..\USER\Middlewares\STM_FLASH\stmflash.c</FilePath>
             </File>
+            <File>
+              <FileName>flash_iap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Middlewares\IAP\flash_iap.c</FilePath>
+            </File>
+            <File>
+              <FileName>sdcard_iap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Middlewares\IAP\sdcard_iap.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart_iap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Middlewares\IAP\usart_iap.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

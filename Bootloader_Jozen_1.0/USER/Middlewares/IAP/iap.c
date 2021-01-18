@@ -1,7 +1,18 @@
 #include "iap.h" 
 
+/*----------------------------重新定义延迟函数--------------------------*/
+void HAL_Delay(uint32_t Delay)
+{
+	int i, j;
+	for(i = 0; i < Delay; i++)
+	{
+		for(j = 0; j < 168000; j++);
+	}
+}
+
 iapfun jump2app; 
-uint32_t iapbuf[512]; 	//2K字节缓存  
+uint32_t iapbuf[512]; 	//2K字节缓存 
+uint8_t Progress_Buff[PRO_MAX_SIZE] __attribute__ ((at(0X20001000)));
 
 //设置栈顶地址
 //addr:栈顶地址

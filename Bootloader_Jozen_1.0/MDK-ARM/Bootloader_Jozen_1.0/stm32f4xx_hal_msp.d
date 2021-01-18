@@ -35,5 +35,11 @@ bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/st
 bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Middlewares\STM_FLASH\stmflash.h
 bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ../Core/Inc/main.h
 bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Application\interaction.h
-bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Middlewares\IAP\flash_iap.h
 bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Middlewares\IAP\iap.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Middlewares\FLASH\flash.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Driver\SPI\driver_spi.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ../Core/Inc/spi.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Middlewares\IAP\usart_iap.h
+bootloader_jozen_1.0\stm32f4xx_hal_msp.o: ..\USER\Middlewares\IAP\SDcard_iap.h

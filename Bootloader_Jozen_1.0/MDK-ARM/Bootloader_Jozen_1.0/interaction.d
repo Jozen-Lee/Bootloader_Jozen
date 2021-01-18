@@ -38,3 +38,10 @@ bootloader_jozen_1.0\interaction.o: ../Core/Inc/main.h
 bootloader_jozen_1.0\interaction.o: ..\USER\Application\interaction.h
 bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\IAP\iap.h
 bootloader_jozen_1.0\interaction.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\IAP\flash_iap.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\FLASH\flash.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Driver\SPI\driver_spi.h
+bootloader_jozen_1.0\interaction.o: ../Core/Inc/spi.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\IAP\usart_iap.h
+bootloader_jozen_1.0\interaction.o: ..\USER\Middlewares\IAP\SDcard_iap.h
+bootloader_jozen_1.0\interaction.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

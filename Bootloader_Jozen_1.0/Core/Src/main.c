@@ -95,7 +95,7 @@ int main(void)
   MX_FATFS_Init();
   MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
-	Interaction_Usart();
+	Interaction();
   /* USER CODE END 2 */
 
   /* Infinite loop */

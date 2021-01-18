@@ -38,8 +38,14 @@ bootloader_jozen_1.0\ff.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uar
 bootloader_jozen_1.0\ff.o: ..\USER\Middlewares\STM_FLASH\stmflash.h
 bootloader_jozen_1.0\ff.o: ../Core/Inc/main.h
 bootloader_jozen_1.0\ff.o: ..\USER\Application\interaction.h
-bootloader_jozen_1.0\ff.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\ff.o: ..\USER\Middlewares\IAP\flash_iap.h
 bootloader_jozen_1.0\ff.o: ..\USER\Middlewares\IAP\iap.h
+bootloader_jozen_1.0\ff.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\ff.o: ..\USER\Middlewares\FLASH\flash.h
+bootloader_jozen_1.0\ff.o: ..\USER\Driver\SPI\driver_spi.h
+bootloader_jozen_1.0\ff.o: ../Core/Inc/spi.h
+bootloader_jozen_1.0\ff.o: ..\USER\Middlewares\IAP\usart_iap.h
+bootloader_jozen_1.0\ff.o: ..\USER\Middlewares\IAP\SDcard_iap.h
 bootloader_jozen_1.0\ff.o: ../FATFS/Target/bsp_driver_sd.h
 bootloader_jozen_1.0\ff.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 bootloader_jozen_1.0\ff.o: ../Middlewares/Third_Party/FatFs/src/diskio.h

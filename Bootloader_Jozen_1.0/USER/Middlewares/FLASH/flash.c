@@ -1,7 +1,7 @@
 #include "flash.h" 
 
 
-uint16_t SPI_FLASH_TYPE=W25Q16;
+uint16_t SPI_FLASH_TYPE=W25Q256;
 
 //4Kbytes为一个Sector
 //16个扇区为1个Block

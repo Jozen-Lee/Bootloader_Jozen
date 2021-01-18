@@ -38,7 +38,13 @@ bootloader_jozen_1.0\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ha
 bootloader_jozen_1.0\syscall.o: ..\USER\Middlewares\STM_FLASH\stmflash.h
 bootloader_jozen_1.0\syscall.o: ../Core/Inc/main.h
 bootloader_jozen_1.0\syscall.o: ..\USER\Application\interaction.h
-bootloader_jozen_1.0\syscall.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\syscall.o: ..\USER\Middlewares\IAP\flash_iap.h
 bootloader_jozen_1.0\syscall.o: ..\USER\Middlewares\IAP\iap.h
+bootloader_jozen_1.0\syscall.o: ../Core/Inc/usart.h
+bootloader_jozen_1.0\syscall.o: ..\USER\Middlewares\FLASH\flash.h
+bootloader_jozen_1.0\syscall.o: ..\USER\Driver\SPI\driver_spi.h
+bootloader_jozen_1.0\syscall.o: ../Core/Inc/spi.h
+bootloader_jozen_1.0\syscall.o: ..\USER\Middlewares\IAP\usart_iap.h
+bootloader_jozen_1.0\syscall.o: ..\USER\Middlewares\IAP\SDcard_iap.h
 bootloader_jozen_1.0\syscall.o: ../FATFS/Target/bsp_driver_sd.h
 bootloader_jozen_1.0\syscall.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

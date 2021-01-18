@@ -24,7 +24,6 @@
 uint16_t USART_RX_STA=0;       //接收状态标记	
 uint32_t USART_RX_CNT=0;			//接收的字节数 
 
-uint8_t USART_RX_BUF[USART_REC_LEN] __attribute__ ((at(0X20001000)));//接收缓冲,最大USART_REC_LEN个字节,起始地址为0X20001000. 
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart1;
@@ -114,9 +113,9 @@ void USER_USART1_IRQHandler(UART_HandleTypeDef *huart)
 	if((__HAL_UART_GET_FLAG(huart,UART_FLAG_RXNE)!=RESET))  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
 	{
         HAL_UART_Receive(huart,&Res,1,1000); 
-		if(USART_RX_CNT<USART_REC_LEN)
+		if(USART_RX_CNT<PRO_MAX_SIZE)
 		{
-			USART_RX_BUF[USART_RX_CNT]=Res;
+			Progress_Buff[USART_RX_CNT]=Res;
 			USART_RX_CNT++;			 									     
 		}    		 
 	}	
